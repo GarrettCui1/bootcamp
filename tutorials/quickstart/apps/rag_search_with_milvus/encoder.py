@@ -11,7 +11,7 @@ def get_embedding_cache():
 embedding_cache = get_embedding_cache()
 
 
-def emb_text(client: OpenAI, text: str, model: str = "text-embedding-3-small"):
+def emb_text(client: OpenAI, text: str, model: str = "qwen3-embedding:0.6b"):
     if text in embedding_cache:
         return embedding_cache[text]
     else:

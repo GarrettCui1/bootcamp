@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 
-def get_llm_answer(client: OpenAI, context: str, question: str, model: str = "gpt-4o"):
+def get_llm_answer(client: OpenAI, context: str, question: str, model: str = "qwen3:0.6b"):
     # Define system and user prompts
     SYSTEM_PROMPT = """
     Human: You are an AI assistant. You are able to find answers to the questions from the contextual passage snippets provided.
